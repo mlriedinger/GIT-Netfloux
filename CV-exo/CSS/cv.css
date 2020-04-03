@@ -1,0 +1,304 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+i {
+    color: black;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    border-bottom: solid 0.1em var(--mainColor);
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+h3{
+    color: var(--mainColor);
+    opacity:0.6;
+    font-size: 1.5em;
+}
+h4{
+    color: var(--mainColor);
+    font-size: 1em;
+    opacity: 0.4;
+    text-decoration: underline;
+}
+p{
+    font-size: 1em;
+}
+th {
+    padding: 1em;
+    background-color:var(--mainColor);
+    color: whitesmoke;
+    border: solid 0.02em black;
+    font-size: 1em;
+}
+td {
+        padding: 1em;
+        color: black;
+        border: solid 0.02em black;
+        font-size: 1em;
+        text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+a {
+    color: var(--mainColor);
+}
+/* barre de navigation */
+nav {
+    border-bottom: solid 1px grey;
+    font-size: 1.5em;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Menu de liens */
+nav a:hover
+{
+    color: var(--mainColor);
+    text-decoration: underline;
+    cursor: pointer;
+}
+nav a {
+    color: black;
+}
+/* Header photo */
+.photos {
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 10em;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Photos header */
+.tete {
+    border: solid 1px white;
+    border-radius: 3em;
+    width: 5em;
+    height: 5em;
+}
+.tete:hover {
+    border: solid 2px white;
+}
+
+/* Select photo */
+.select {
+    border: solid 2px var(--mainColor);
+}
+.select:hover  {
+    border: solid 2px var(--mainColor);
+}
+
+/* Text photo */
+.photoIndiv {
+    width: 6em;
+    display: flex;
+    flex-direction: column;
+}
+.texteCentre {
+    text-align: center;
+    font-size: 1em;
+}
+/* liste picto */
+.picto{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -1.5em;
+    font-size: 1.5em;
+}
+.pictol:hover {
+    color: var(--mainColor);
+}
+li{
+    margin-right: 1em;
+}
+#profil {
+    text-align: center;
+}
+.photoProfil {
+    height: 14em;
+    margin-top: 2em;
+    border-radius: 10em;
+    width: 14em;
+    border: solid 1px var(--mainColor);
+}
+.presentation{
+    font-size: 1em;
+    font-style: italic;
+}
+.remonter{
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.5em;
+    font-size: 3em;
+}
+.container {
+    padding-top: 8em;
+}
+#maison {
+    background-color: #E9E9E9;
+    text-align: center;
+    display: none;
+}
+.maisonIcone {
+    font-size: 5em;
+}
+.hobby {
+    border-bottom: solid 1px black;
+}
+.vid {
+    height: 30em;
+    margin-top: 2em;
+    text-align: center;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+/* Formulaire */
+
+form{
+    width: 60%;
+    margin:auto;
+
+}
+input,select{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+#contact{
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+textarea{
+    height: 15em;
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word; 
+}
+
+legend{
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+fieldset{
+    margin-bottom: 3em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px var(--mainColor);
+}
+
+#boutonEnvoyer{
+    color: var(--mainColor);
+    box-shadow: 2px 2px 1px var(--mainColor);
+}
+
+#divBoutonEnvoyer{
+    text-align: center;
+}
+
+/* Page d'accueil */
+.allphoto {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.col-sm {
+    padding: 3% 2%;
+}
+
+.tete2 {
+    border: solid 1px white;
+    width: 9em;
+    height: 9em;
+    border-radius: 4.5em;
+    /* margin: auto; */
+}
+
+/* Page de démarrage */
+.landing
+{
+    padding: 1% 0%;
+    text-align: center;
+}
+
+#jungle
+{
+    color: #006666;
+}
+
+#clic
+{
+    text-align: center;
+    font-style: oblique;
+}
+
+.home
+{
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50%);
+}
+.divPhoto:hover {
+    background-color: #E9E9E9;
+}
+.divPhoto p {
+    color: black;
+    text-decoration: none !important;
+}
+.maisonIconeGrand {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+#intro {
+    text-align: justify;
+}
+.competences {
+    margin-top: 2em;
+}
+video {
+    width: 80%;
+    height: 60%;
+}
+@media (max-width: 768px) {
+
+    h2 {
+        text-align: center;
+    }
+    .photos
+    {
+        display: none;
+    }
+    #maison {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .container {
+        padding-top: 1em;
+    }
+
+    .home{
+        position: absolute;
+        top: 0%;
+        transform: none;
+    }
+}

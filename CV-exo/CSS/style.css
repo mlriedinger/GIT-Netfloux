@@ -1,0 +1,282 @@
+a:link
+{
+    text-decoration: none;
+}
+#imageEnGrand
+{
+    position: fixed;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 500px;
+    height: 500px;
+    left: 45em;
+    top: 10em;
+    color: white;
+    text-align: center;
+    border: solid 3px grey;
+    background-image: url("../IMG/Moi.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    /* display: flex;
+    align-content: space-around; */
+    display: none;
+    z-index: 11;
+}
+#photo
+{
+    width: 8em;
+    height: 8em;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    border-radius: 10px;
+    border: solid 5px grey;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#entete
+{
+
+    position: fixed;
+    top: 0px;
+    border: solid 3px grey;    
+    border-radius: 5px;
+    /* padding: 10px; */
+    background-color: #CBE86B;
+    width: 100%;
+    height: 10em;
+    z-index: 10;
+    margin: 0px;
+}
+#menu
+{
+    text-align: center;
+}
+#titres
+{
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+}
+#sommaire
+{
+    border: dotted 2px blue;
+    background-color: white;
+    width: 280px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    box-shadow: blue 2px 2px 2px;
+}
+#envoyer
+{
+    font-size: 1em;
+    margin-left: 12em;
+}
+.bloc
+{
+    border: dotted 1px black;
+    background-color: white;
+    width: 80%;
+    padding: 5px;
+    box-shadow: blue 2px 2px 2px;
+}
+/* #competences
+{
+    border: dotted 1px black;
+    background-color: white;
+    width: 80%;
+    padding: 5px;    
+} */
+.surligne
+{
+    text-decoration: underline;
+}
+.turquoise 
+{
+    color: turquoise;
+}
+.contenu
+{
+    background-color: #F2E9E1;
+    border: solid 1px grey;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-top: 160px;
+    margin-left: 0px;
+}
+.pays
+{
+    width: 300px;
+    height: 250px;
+    border: solid 3px grey;
+    border-radius: 3px;
+}
+.textContenu
+{
+    color: blue;
+}
+table
+{
+  border-collapse: collapse;
+  border: 1px solid black;
+  box-shadow: blue 3px 3px 3px;
+  width: 50vw;
+  background-color: whitesmoke;
+}
+td 
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+tr:hover
+{
+    background-color: turquoise;
+    color: white;
+}
+h3, h2
+{
+    text-decoration: underline;
+}
+progress
+{
+    /* color: turquoise; */
+    position: absolute;
+    left: 25em;
+    background-color: blue;
+    width: 10em;
+    height: 0.6em;
+}
+progress::-webkit-progress-value {
+    background: turquoise;
+  }
+h4
+{
+    text-decoration: underline;
+}
+#formContact
+{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px grey;
+    width: 30em;
+    /* padding: 50%; */
+    border-radius: 10px;
+    /* text-align: center; */
+    padding-left: 50px;
+    background-color: teal;
+    color: white;
+    margin-top: 10em;
+}
+.rouge
+{
+    color: red;
+}
+.menu
+{
+    /* border: solid 2px black; */
+    color: white;
+    background-color: grey;
+    position: relative;
+    bottom: 1em;
+    /* border-radius: 5px; */
+    margin: 0.1em;
+    padding: 0.2em;
+    font-size: 2em;
+    box-shadow: blue 3px 3px 3px;
+}
+.menu:hover
+{
+    color: black;
+    background-color: white;
+}
+input, textarea
+{
+    background-color:#D9DCDC;
+    border-radius: 5px;
+}
+h5
+{
+    /* margin-block-start: 0%;
+    margin-block-end: 0%; */
+    margin: 0.2em;
+}
+.remplissageCellule
+{
+    background-color: #D9DCDC;
+}
+
+.apparaitQuandPetit
+{
+     color: blue; 
+    visibility: hidden;
+}
+.presentation
+{
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: underline;
+}
+object{
+    width:40em; 
+    height:30em;
+}
+
+@media only screen and (max-width: 970px) {
+    #menu {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 640px) {
+        .apparaitQuandPetit {
+             visibility: visible; 
+        }
+        progress {
+            display: none;
+        }
+        #entete {
+            font-size: 0.5em;
+            height: 20em;
+            margin-bottom: 0%;
+        }
+        #menu {
+            position: absolute;
+            bottom: 5px;
+            left: 3em;
+            font-size: 1em;
+        }
+        #sommaire {
+            width: 10em;
+        }
+        table {
+            margin: 0px;
+            font-size: 0.8em;
+        }
+        #imageEnGrand {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 20vh;
+            width: 40vw;
+            font-size: 0.08em;
+        }
+        object{
+            display: none;
+        }
+        #formContact {
+            width: 15em;
+            font-size: 1em;
+            padding: 0px;
+        }
+        #envoyer {
+            margin-left: 5em;
+        }        
+        textarea {
+            width: 10em;
+        }
+}

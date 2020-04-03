@@ -1,0 +1,42 @@
+.allphoto {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.col-sm {
+    padding: 3% 2%;
+}
+
+.tete2 {
+    border: solid 1px white;
+    width: 9em;
+    height: 9em;
+    border-radius: 4.5em;
+    /* margin: auto; */
+}
+
+
+.landing
+{
+    padding: 1% 0%;
+    text-align: center;
+}
+
+#jungle
+{
+    color: #006666;
+}
+
+#clic
+{
+    text-align: center;
+    font-style: oblique;
+}
+
+.home
+{
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50%);
+}
